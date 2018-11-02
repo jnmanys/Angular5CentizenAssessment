@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">Employee Details</div>
+    <div class="card-body">
+        <table class="table table-bordered m-0">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employeeList">
+                    <td>{{ employee.firstName | titlecase }}</td>
+                    <td>{{ employee.lastName | titlecase }}</td>
+                    <td>{{ employee.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
